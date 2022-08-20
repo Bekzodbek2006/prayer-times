@@ -28,7 +28,20 @@ h1 {
     text-transform: uppercase;
 }
 
+.icon{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    font-size:30px;
+    cursor: pointer;
+}
 
+#modal{
+    display: none;
+    position: absolute;
+    top: 12%;
+    right: 25%;
+}
 
 .times{
     text-align: center;

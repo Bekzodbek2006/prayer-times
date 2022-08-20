@@ -2,6 +2,10 @@ let friday_text = document.querySelector(".text");
 let now_text = document.querySelector(".now");
 let gacha_kun = document.querySelector(".gacha_kun");
 let gacha_oy = document.querySelector(".gacha_oy");
+let copy = document.querySelector('.copy')
+let openModal = document.querySelector('.icon')
+let when = document.querySelector('.when')
+let modal = document.getElementById('modal')
 
 
 
@@ -61,9 +65,31 @@ function dates(date, dayOfWeek){
 
 dates()
 
-function start(){
-    setTimeout(()=>{
-        alert(`Keyingi JUMAgacha ${masofa_kun} kun qoldi !`)
-    }, 6000)    
-}
+let modal_is = false
 
+openModal.addEventListener('click', function(){
+    if(modal_is == false){
+        modal.style.display = "block"
+        modal_is = true
+    }
+    else{
+        modal.style.display = "none"
+        modal_is = false
+    }
+})
+
+
+
+when.style.cursor = 'pointer'
+when.addEventListener('click', function(){
+    alert(`Keyingi JUMAgacha ${masofa_kun} kun qoldi !`)
+    modal.style.display = "none"
+})
+
+
+
+copy.style.cursor = "pointer"
+copy.addEventListener('click', ()=>{
+    navigator.clipboard.writeText(document.location.href)
+    modal.style.display = "none"
+})
