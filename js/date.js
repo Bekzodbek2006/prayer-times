@@ -1,7 +1,10 @@
 let friday_text = document.querySelector(".text");
 let now_text = document.querySelector(".now");
+let gacha_kun = document.querySelector(".gacha_kun");
+let gacha_oy = document.querySelector(".gacha_oy");
 
- 
+
+
 const month = [
   "Yanvar",
   "Fevral",
@@ -46,4 +49,3 @@ function dates(date, dayOfWeek){
     console.log(distance + " kun qoldi");
 }
 
-dates()
