@@ -54,6 +54,7 @@ h1 {
     .times{
         margin-top: 20px;
         text-align: center;
+        align-items: center;
         display: flex;
     }
     .times h3{
