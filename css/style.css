@@ -46,6 +46,8 @@ h1 {
 }
 
 span{
+    display: flex;
+    
     width: 300px;
 }
 
@@ -65,7 +67,7 @@ span{
         margin-right: 10px;
     }
     span{
-        width: 300px;
+        margin-left: -60px;
     }
     
 }
