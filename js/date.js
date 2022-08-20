@@ -35,17 +35,19 @@ function dates(date, dayOfWeek){
     // juma kuni uchun
     friday = date.getDate()
     let friday_month = date.getMonth();
-    friday_text.innerHTML = friday + month[friday_month]
+    // friday_text.innerHTML = friday
+    gacha_kun.innerHTML = friday
+    gacha_oy.innerHTML = `- ${month[friday_month]}gacha`
 
     // bugungi kun vaqti
     let nowdate = new Date()
     now_day = nowdate.getDate()
     now_month = nowdate.getMonth()
-    now_text.innerHTML = now_day + month[now_month]
-
+    // now_text.innerHTML = now_day + month[now_month]
     // masofa vaqti
     let  distance =  friday - now_day
     distance =  Math.floor((distance % (nowdate)))
     console.log(distance + " kun qoldi");
 }
 
+dates()
