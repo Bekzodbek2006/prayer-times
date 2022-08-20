@@ -5,6 +5,7 @@ let gacha_oy = document.querySelector(".gacha_oy");
 
 
 
+
 const month = [
   "Yanvar",
   "Fevral",
@@ -54,8 +55,15 @@ function dates(date, dayOfWeek){
     let  distance_day =  friday - now_day
     masofa_kun =  Math.floor((distance_day % (now_day)))
     console.log(masofa_kun + " kun qoldi");
+    if(distance_day < 0){
+    }
 }
 
 dates()
 
+function start(){
+    setTimeout(()=>{
+        alert(`Keyingi JUMAgacha ${masofa_kun} kun qoldi !`)
+    }, 6000)    
+}
 
