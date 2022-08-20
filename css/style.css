@@ -64,4 +64,8 @@ span{
     .times h3{
         margin-right: 10px;
     }
+    span{
+        width: 300px;
+    }
+    
 }
