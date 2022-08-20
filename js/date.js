@@ -34,6 +34,9 @@ function dates(date, dayOfWeek){
     }
     // juma kuni uchun
     friday = date.getDate()
+    firday_hours = date.getHours()
+    friday_minut = date.getMinutes()
+    friday_seconds = date.getSeconds()
     let friday_month = date.getMonth();
     // friday_text.innerHTML = friday
     gacha_kun.innerHTML = friday
@@ -43,11 +46,14 @@ function dates(date, dayOfWeek){
     let nowdate = new Date()
     now_day = nowdate.getDate()
     now_month = nowdate.getMonth()
+    now_hour = nowdate.getHours()
+    now_minut = nowdate.getMinutes()
+    now_seconds = nowdate.getSeconds()
     // now_text.innerHTML = now_day + month[now_month]
     // masofa vaqti
-    let  distance =  friday - now_day
-    distance =  Math.floor((distance % (nowdate)))
-    console.log(distance + " kun qoldi");
+    let  distance_day =  friday - now_day
+    masofa_kun =  Math.floor((distance_day % (now_day)))
+    console.log(masofa_kun + " kun qoldi");
 }
 
 dates()
