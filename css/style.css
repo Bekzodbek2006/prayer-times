@@ -45,12 +45,12 @@ h1 {
     justify-content: center;
 }
 
-span{
+.span{
     display: flex;
     width: 300px;
 }
 
-span :nth-child(1){
+.span :nth-child(1){
     margin-right: 10px;
 }
 
@@ -69,7 +69,7 @@ span :nth-child(1){
     .times h3{
         margin-right: 10px;
     }
-    span{
+    .span{
         margin-left: -60px;
     }
     
