@@ -82,7 +82,7 @@ openModal.addEventListener('click', function(){
 
 when.style.cursor = 'pointer'
 when.addEventListener('click', function(){
-    alert(`Keyingi JUMAgacha ${masofa_kun} kun qoldi !`)
+    alert(`Kelasi JUMAgacha ${masofa_kun} kun qoldi !`)
     modal.style.display = "none"
 })
 
