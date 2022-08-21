@@ -43,6 +43,7 @@ h1 {
     right: 25%;
     background-color:#000;
     padding:20px 15px;
+    border-radius:10px;
 }
 
 .times{
