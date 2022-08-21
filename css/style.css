@@ -41,6 +41,8 @@ h1 {
     position: absolute;
     top: 12%;
     right: 25%;
+    background-color:#000;
+    padding:20px 15px;
 }
 
 .times{
