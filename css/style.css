@@ -46,6 +46,11 @@ h1 {
     border-radius:10px;
 }
 
+a{
+color:#fff;
+margin-left:5px;
+}
+
 .times{
     text-align: center;
     margin-left: 10px;
