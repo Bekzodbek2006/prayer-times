@@ -11,22 +11,22 @@ let modal = document.getElementById('modal')
 
 
 const month = [
-  "Yanvar",
-  "Fevral",
-  "Mart",
-  "Aprel",
-  "May",
-  "Iyun",
-  "Iyul",
-  "Avgust",
-  "Sentabr",
-  "Oktabr",
-  "Nayabr",
-  "Dekabr",
+    "Yanvar",
+    "Fevral",
+    "Mart",
+    "Aprel",
+    "May",
+    "Iyun",
+    "Iyul",
+    "Avgust",
+    "Sentabr",
+    "Oktabr",
+    "Nayabr",
+    "Dekabr",
 ];
 
 
-function dates(date, dayOfWeek){
+function dates(date, dayOfWeek) {
     // juma kunni topish uchun 👇
     var dayOfWeek = 5;//juma kuni
     var date = new Date();
@@ -44,8 +44,10 @@ function dates(date, dayOfWeek){
     friday_seconds = date.getSeconds()
     let friday_month = date.getMonth();
     // friday_text.innerHTML = friday
+
     gacha_kun.innerHTML = friday
     gacha_oy.innerHTML = `- ${month[friday_month]}gacha`
+
 
     // bugungi kun vaqti
     let nowdate = new Date()
@@ -56,40 +58,46 @@ function dates(date, dayOfWeek){
     now_seconds = nowdate.getSeconds()
     // now_text.innerHTML = now_day + month[now_month]
     // masofa vaqti
-    let  distance_day =  friday - now_day
-    masofa_kun =  Math.floor((distance_day % (now_day)))
-    console.log(masofa_kun + " kun qoldi");
-    if(distance_day < 0){
-    }
+    let distance_day = friday - now_day
+    masofa_kun = Math.floor((distance_day % (now_day)))
+
+
 }
 
 dates()
 
+let distance_day = friday - now_day
+when.addEventListener('click', function () {
+    modal.style.display = "none"
+    if (distance_day > 0) {
+        alert(`Kelasi Jumagacha ${masofa_kun} kun qoldi !`)
+    }
+    else if (distance_day == 0) {
+        alert("Bugun Juma ! Sizni tabriklayman")
+    }
+    else {
+        alert("err")
+    }
+})
+
 let modal_is = false
 
-openModal.addEventListener('click', function(){
-    if(modal_is == false){
+openModal.addEventListener('click', function () {
+    if (modal_is == false) {
         modal.style.display = "block"
         modal_is = true
     }
-    else{
+    else {
         modal.style.display = "none"
         modal_is = false
     }
 })
 
 
-
 when.style.cursor = 'pointer'
-when.addEventListener('click', function(){
-    alert(`Kelasi JUMAgacha ${masofa_kun} kun qoldi !`)
-    modal.style.display = "none"
-})
-
-
-
 copy.style.cursor = "pointer"
-copy.addEventListener('click', ()=>{
+copy.addEventListener('click', () => {
     navigator.clipboard.writeText(document.location.href)
     modal.style.display = "none"
 })
+
