@@ -6,8 +6,9 @@ let copy = document.querySelector('.copy')
 let openModal = document.querySelector('.icon')
 let when = document.querySelector('.when')
 let modal = document.getElementById('modal')
-
-
+let modal_info = document.querySelector('.modal_info')
+let btn = modal_info.querySelector('button')
+let p = modal_info.querySelector('p')
 
 
 const month = [
@@ -60,7 +61,7 @@ function dates(date, dayOfWeek) {
     // masofa vaqti
     let distance_day = friday - now_day
     masofa_kun = Math.floor((distance_day % (now_day)))
-
+   
 
 }
 
@@ -68,16 +69,21 @@ dates()
 
 let distance_day = friday - now_day
 when.addEventListener('click', function () {
+    modal_info.style.display = "block"
     modal.style.display = "none"
-    if (distance_day > 0) {
-        alert(`Kelasi Jumagacha ${masofa_kun} kun qoldi !`)
+    if (masofa_kun >= 7){
+        p.innerHTML = `Kelasi Jumagacha ${masofa_kun} kun qoldi !`
+        
     }
-    else if (distance_day == 0) {
-        alert("Bugun Juma ! Sizni tabriklayman")
+    else{
+        p.innerHTML = "Nimadir Xato ketdi <a target='_blank' href='https://mrsenior.t.me/'>Admin</a>ga murojaat qiling."
     }
-    else {
-        alert("err")
-    }
+    console.log(masofa_kun);
+   
+})
+
+btn.addEventListener('click', ()=>{
+    modal_info.style.display = "none"
 })
 
 let modal_is = false
