@@ -61,7 +61,7 @@ function dates(date, dayOfWeek) {
     // masofa vaqti
     let distance_day = friday - now_day
     masofa_kun = Math.floor((distance_day % (now_day)))
-   
+
 
 }
 
@@ -71,22 +71,22 @@ let distance_day = friday - now_day
 when.addEventListener('click', function () {
     modal_info.style.display = "block"
     modal.style.display = "none"
-    if (masofa_kun == 0){
+    if (masofa_kun == 0) {
         p.innerHTML = `🥳🥳🎉🎊Sizni aynan sizni Juma Bilan tabriklayman !`
-        
+
     }
-    else if (masofa_kun <= 7){
+    else if (masofa_kun <= 7) {
         p.innerHTML = `Kelasi Jumagacha ${masofa_kun} kun qoldi !`
-        
+
     }
-    else{
+    else {
         p.innerHTML = "Nimadir Xato ketdi <a target='_blank' href='https://mrsenior.t.me/'>Admin</a>ga murojaat qiling."
     }
     console.log(masofa_kun);
-   
+
 })
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('click', () => {
     modal_info.style.display = "none"
 })
 

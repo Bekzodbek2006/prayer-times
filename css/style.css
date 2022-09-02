@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: grid;
     place-items: center;
@@ -14,17 +15,17 @@ body {
 
 
 
-.loaction{
+.loaction {
     display: flex;
     justify-content: center;
 }
 
-.loaction i{
+.loaction i {
     margin-top: 5px;
     margin-right: 10px;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,24 +38,25 @@ h1 {
     text-transform: uppercase;
 }
 
-.icon{
+.icon {
     position: absolute;
     top: 10%;
     right: 20%;
-    font-size:30px;
+    font-size: 30px;
     cursor: pointer;
 }
 
-#modal{
+#modal {
     display: none;
     position: absolute;
     top: 12%;
     right: 25%;
-    background-color:#000;
-    padding:20px 15px;
-    border-radius:10px;
+    background-color: #000;
+    padding: 20px 15px;
+    border-radius: 10px;
 }
-.modal_info{
+
+.modal_info {
     display: none;
     position: absolute;
     top: 44%;
@@ -66,77 +68,82 @@ h1 {
     font-size: 1.3rem;
 }
 
-.modal_info button{
+.modal_info button {
     background-color: #fff;
     padding: 5px 10px;
     margin-top: 10px;
 
 }
 
-#modal  a{
-    color:#fff;
+#modal a {
+    color: #fff;
     text-decoration: none;
 }
 
-#modal i{
+#modal i {
     margin-right: 5px;
 }
 
-.times{
+.times {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.times h3{
+.times h3 {
     color: #7e827f;
 }
 
-.modal-el{
+.modal-el {
     padding: 10px 5px;
 }
 
-.d-flex{
+.d-flex {
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.span{
+.span {
     display: flex;
     margin-top: 10px;
     width: 300px;
 }
 
-.span :nth-child(1){
+.span :nth-child(1) {
     margin-right: 10px;
 }
 
 @media (max-width:500px) {
-    .div{
+    .div {
         width: 100px;
         margin-left: auto;
         margin-right: auto;
     }
-    .times{
+
+    .times {
         margin-top: 20px;
         text-align: center;
         align-items: center;
         display: flex;
     }
-    .times h3{
+
+    .times h3 {
         margin-right: 10px;
     }
-    .span{
+
+    .span {
         margin-left: -60px;
     }
-    .modal_info{
+
+    .modal_info {
         top: 48%;
         left: 23%;
         padding: 20px 31px;
         font-size: 1rem;
     }
-    .modal_info bottom{
+
+    .modal_info bottom {
         font-size: 0.7rem;
     }
-    
+
 }
