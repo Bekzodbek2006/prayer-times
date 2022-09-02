@@ -71,7 +71,11 @@ let distance_day = friday - now_day
 when.addEventListener('click', function () {
     modal_info.style.display = "block"
     modal.style.display = "none"
-    if (masofa_kun >= 7){
+    if (masofa_kun == 0){
+        p.innerHTML = `🥳🥳🎉🎊Sizni aynan sizni Juma Bilan tabriklayman !`
+        
+    }
+    else if (masofa_kun <= 7){
         p.innerHTML = `Kelasi Jumagacha ${masofa_kun} kun qoldi !`
         
     }
