@@ -90,22 +90,20 @@ btn.addEventListener('click', () => {
     modal_info.style.display = "none"
 })
 
-let modal_is = false
+// let modal_is = false
 
-openModal.addEventListener('click', function () {
-    if (modal_is == false) {
-        modal.style.display = "block"
-        modal_is = true
-    }
-    else {
-        modal.style.display = "none"
-        modal_is = false
-    }
-})
+// openModal.addEventListener('click', function () {
+//     if (modal_is == false) {
+//         modal.style.display = "block"
+//         modal_is = true
+//     }
+//     else {
+//         modal.style.display = "none"
+//         modal_is = false
+//     }
+// })
 
 
-when.style.cursor = 'pointer'
-copy.style.cursor = "pointer"
 copy.addEventListener('click', () => {
     navigator.clipboard.writeText(document.location.href)
     modal.style.display = "none"

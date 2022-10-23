@@ -28,6 +28,7 @@ function CustomAlert() {
     this.ok = function () {
         document.getElementById('dialogbox').style.display = "none";
         document.getElementById('dialogoverlay').style.display = "none";
+        document.location.reload()
     }
 }
 
